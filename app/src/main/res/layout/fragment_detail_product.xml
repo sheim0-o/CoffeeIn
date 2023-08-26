@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F1F1F1"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DetailProductFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4" >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-40dp"
+            app:cardCornerRadius="30dp"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:id="@+id/imgPrchPage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="40dp"
+                tools:background="@drawable/ic_coffee_cup" />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_weight="5" >
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/namePrchPage"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/raleway_medium"
+            android:text="Название продукта"
+            android:textAlignment="center"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/descriptionPrchPage"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp"
+            android:text="Описание продукта"
+            android:fontFamily="@font/raleway_medium"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textSize="14dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_gravity="center" >
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAmountMinus"
+                android:layout_width="42dp"
+                android:layout_height="50dp"
+                android:text="-"
+                android:textSize="20dp"
+                android:fontFamily="@font/raleway_bold"
+                android:backgroundTint="?attr/colorPrimaryVariant"
+                app:cornerRadius="90dp"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/countOfAmount"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:text="1"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:textSize="22dp"
+                android:textStyle="bold"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAmountPlus"
+                android:layout_width="42dp"
+                android:layout_height="50dp"
+                android:fontFamily="@font/raleway_bold"
+                android:backgroundTint="?attr/colorPrimaryVariant"
+                android:text="+"
+                android:textSize="20dp"
+                app:cornerRadius="90dp"/>
+        </LinearLayout>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/cost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/raleway_medium"
+            android:text="Общая цена: "
+            android:textSize="20dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnBuyOnPurPage"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="Добавить в корзину"
+            android:fontFamily="@font/raleway_bold"
+            android:backgroundTint="?attr/colorPrimaryVariant"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            app:cornerRadius="13dp"/>
+    </LinearLayout>
+</LinearLayout>

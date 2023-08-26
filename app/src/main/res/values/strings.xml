@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">CoffeeIn</string>
+
+    <string name="menu_text_menu">Меню</string>
+    <string name="menu_text_profile">Профиль</string>
+    <string name="menu_text_basket">Корзина</string>
+
+    <string name="empty_basket">Ваша корзина пуста...</string>
+
+    <string name="male">Мужской</string>
+    <string name="female">Женский</string>
+</resources>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context=".ChangeProfile">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_top"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="?attr/colorPrimary" >
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/raleway_bold"
+            android:text="CoffeeIn"
+            android:textColor="#FFFFFF"
+            android:textSize="26dp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_medium"
+                android:textColor="@color/black"
+                android:textAllCaps="false"
+                android:layout_marginTop="20dp"
+                android:textSize="18dp"
+                android:text="Введите имя* -"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/nameChangeProfile"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Имя"
+                android:textColorHint="#676767">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/nameChangeProfileInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textSize="20dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_medium"
+                android:textColor="@color/black"
+                android:textAllCaps="false"
+                android:layout_marginTop="16dp"
+                android:textSize="18dp"
+                android:text="Введите фамилию* -"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/surnameChangeProfile"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Фамилия"
+                android:textColorHint="#676767">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/surnameChangeProfileInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textSize="20dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_medium"
+                android:textColor="@color/black"
+                android:textAllCaps="false"
+                android:layout_marginTop="16dp"
+                android:textSize="18dp"
+                android:text="Введите отчество -"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/patronymicChangeProfile"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Отчество"
+                android:textColorHint="#676767">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/patronymicChangeProfileInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textSize="20dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_medium"
+                android:textColor="@color/black"
+                android:textAllCaps="false"
+                android:layout_marginTop="16dp"
+                android:textSize="18dp"
+                android:text="Введите почту* -"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/emailChangeProfile"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Почта"
+                android:textColorHint="#676767">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/emailChangeProfileInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:textSize="20dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_medium"
+                android:textColor="@color/black"
+                android:textAllCaps="false"
+                android:layout_marginTop="16dp"
+                android:textSize="18dp"
+                android:text="Введите дату рождения* -"/>
+            <DatePicker
+                android:id="@+id/birthdateChangeProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:datePickerMode="spinner"
+                android:layout_gravity="center"
+                android:calendarViewShown="false"/>
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_medium"
+                android:textColor="@color/black"
+                android:textAllCaps="false"
+                android:layout_marginTop="16dp"
+                android:textSize="18dp"
+                android:text="Выберите пол -"/>
+            <RadioGroup
+                android:id="@+id/genderChangeProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/radio_male"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Мужской"
+                    android:tag="male"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/radio_female"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Женский"
+                    android:tag="female"
+                    android:layout_weight="1" />
+            </RadioGroup>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnConfirmChangesOfProfile"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:onClick="onClick"
+                android:text="Сохранить изменения"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCancelChangesOfProfile"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:text="Вернуться на главную"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="30dp"
+                android:onClick="onClick"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:fontFamily="@font/raleway_bold"
+                android:textColor="?attr/colorPrimaryVariant"
+                app:strokeColor="?attr/colorPrimaryVariant"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
